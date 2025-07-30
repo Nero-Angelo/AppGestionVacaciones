@@ -20,6 +20,6 @@ script:
 notifications:
   email:
     recipients:
-      - tu-correo@ejemplo.com
+      - al02780757@tecmilenio.mx
     on_success: always
     on_failure: always
