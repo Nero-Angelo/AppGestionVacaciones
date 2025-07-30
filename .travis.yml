@@ -1,0 +1,13 @@
+language: java
+
+jdk:
+  - openjdk21
+
+before_script:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+  - mkdir bin
+  - javac -d bin src/models/*.java src/views/*.java src/*.java
+  - java -cp bin App
