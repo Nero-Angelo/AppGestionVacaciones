@@ -125,7 +125,7 @@ public class VacationCalculatorView extends JFrame {
                 result.getEmployeeName(),
                 result.getHireDate(),
                 result.getYearsWorked(),
-                //result.getDaysWorked(),
+                //result.getDaysWorked(), COMENTADO PARA FUTURAS OPERACIONES
                 result.getNss(),
                 result.getDepartment(),
                 result.getDailySalary(),
