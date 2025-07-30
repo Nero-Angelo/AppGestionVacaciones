@@ -1,0 +1,25 @@
+language: java
+jdk:
+  - openjdk21
+
+before_install:
+  - echo "Preparando entorno para app Swing con SQLite..."
+
+before_script:
+  # Iniciar entorno gráfico virtual
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+  - mvn clean install
+
+# Opcional: cobertura con JaCoCo
+# after_success:
+#   - mvn jacoco:report
+
+notifications:
+  email:
+    recipients:
+      - al02780757@tecmilenio.mx
+    on_success: always
+    on_failure: always
