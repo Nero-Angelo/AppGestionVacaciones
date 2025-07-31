@@ -253,7 +253,7 @@ public class AuthController {
 
     // ==================== MÉTODOS PRIVADOS DE APOYO ====================
 
-    private boolean userExists(String username) {
+    boolean userExists(String username) {
         String sql = "SELECT 1 FROM users WHERE username = ?";
         
         try (Connection conn = Database.connect();
@@ -286,7 +286,7 @@ public class AuthController {
         }
     }
     
-    private boolean isLastAdmin(int userId) {
+    boolean isLastAdmin(int userId) {
         // Primero verificar si el usuario es admin
         String checkAdminSql = "SELECT is_admin FROM users WHERE id = ?";
         boolean isAdmin = false;

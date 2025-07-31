@@ -32,9 +32,7 @@ public class Employee {
     private double monthlySalary;
 
     // Constructor
-    public Employee(int id, String firstName, String lastName, String mothersLastName,
-                   LocalDate hireDate, LocalDate birthDate, String nss,
-                   String curp, String department, double monthlySalary) {
+    public Employee(int id, String firstName, String lastName, String mothersLastName, LocalDate hireDate, LocalDate birthDate, String nss, String curp, String department, double monthlySalary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -48,11 +46,13 @@ public class Employee {
     }
 
     // Constructor sin ID (para inserciones en BD)
-    public Employee(String firstName, String lastName, String mothersLastName,
-                   LocalDate hireDate, LocalDate birthDate, String nss,
-                   String curp, String department, double monthlySalary) {
+    public Employee(String firstName, String lastName, String mothersLastName, LocalDate hireDate, LocalDate birthDate, String nss, String curp, String department, double monthlySalary) {
         this(0, firstName, lastName, mothersLastName, hireDate, birthDate,
              nss, curp, department, monthlySalary);
+    }
+
+    public Employee() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     // Getters y Setters

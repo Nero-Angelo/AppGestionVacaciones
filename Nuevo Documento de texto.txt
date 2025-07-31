@@ -1,2 +1,4 @@
 String username = "admin";
 String password = "Admin";
+
+$2a$10$mNGyP7wtxgfevUUlJ3EoKOcUpuIClqf/OWcDBlLfmFcO2cBLFADsm

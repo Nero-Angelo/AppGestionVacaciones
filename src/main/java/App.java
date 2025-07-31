@@ -40,7 +40,7 @@ public class App {
     /**
      * Establece el Look and Feel Nimbus para una apariencia moderna.
      */
-    private static void setLookAndFeel() {
+    static void setLookAndFeel() {
         try {
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -58,7 +58,7 @@ public class App {
     /**
      * Inicializa la base de datos y crea las tablas necesarias.
      */
-    private static void initializeDatabase() {
+    static void initializeDatabase() {
         try {
             Database.initialize();
             System.out.println("Base de datos inicializada correctamente.");
